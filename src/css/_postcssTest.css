@@ -1,0 +1,64 @@
+@import "_import";
+h2 {
+	color: #00f;
+}
+:root {
+	--color-red: #f00;
+	--color-green: #0f0;
+	--color-blue: #00f;
+}
+
+h3 {
+	color: var(--color-red);
+}
+h4 {
+	font-size: calc(10*5)px;
+	font-size: calc(10px*5);
+	font-size: calc(10*5px);
+	font-size: calc(10px*5px);
+}
+
+li :matches(a,i,.red){
+	color: var(--color-red);
+}
+li{
+	font-size: 12px;
+
+	& a{
+        color: #f00;
+    }
+    @nest ol & {
+    	color: gold;
+	}
+}
+ol {
+	&>li {
+		& :matches(a,i,p){
+			color: red;
+		}
+		& div {
+			border: solid 1px blue;
+		}
+	}
+}
+
+.color {
+  color: color(red a(10%));
+  background-color: color(red lightness(50%)); /* == color(red l(50%)); */
+  border-color: color(hsla(125, 50%, 50%, .4) saturation(+ 10%) w(- 20%));
+}
+
+@custom-media --mq_tab screen and (max-width:980px);
+@custom-media --mq_mob screen and (max-width:480px);
+
+@media (--mq_tab) {
+    h1{
+        color: #00f;
+    }
+}
+
+@media (--mq_mob) {
+    h1{
+        color: #0f0;
+    }
+}

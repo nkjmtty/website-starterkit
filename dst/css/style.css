@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}
+#yui3-css-stamp.cssreset{display:none}
+/* === */
+:root {
+	--color-test: rgba(10,10,10, 0.25);
+	--color-red: #f00;
+	--color-green: #0f0;
+	--color-blue: #00f;
+}
+/* --- */
+body {
+	background-image: url(../img/DUMMY_1_2.jpg);
+	background-position: center top;
+	background-repeat: no-repeat
+}
+@media screen and (min-width: 1600px){
+body {
+}
+	}
+@media screen and (max-width: 1599px){
+body {
+		background-size: 100% auto
+}
+	}
+body {
+	/*
+	position: relative;
+	z-index: 1;
+	&::after {
+		content: '';
+		display: block;
+		max-width: 1600px;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+	*/
+}
+.cmn-area {
+	box-sizing: border-box;
+	border: solid 1px black;
+
+	padding: 2.5vw;
+	margin-bottom: 5vh
+}
+.cmn-area:last-child {
+		margin-bottom: 0;
+	}
+.cmn-area.cmn-area-type0 {
+		position: relative;
+		height: 51.875vw;
+		max-height: 830px
+		
+	}
+.cmn-area.cmn-area-type0::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			display: block;
+			border: solid 1px green;
+		}
+.cmn-area.cmn-area-type3 {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		    grid-template-rows: auto;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		
+		box-sizing: border-box;
+		width: 100%;
+		max-width: calc(1200px + 5vw);
+		min-height: 100vh;
+		margin-right: auto;
+		margin-left: auto
+	}
+.cmn-area.cmn-area-type3:nth-of-type(odd) {
+			/*
+			@media screen and (min-width: 910px){
+			*/
+		}
+@media screen and (min-width: 1080px){
+.cmn-area.cmn-area-type3:nth-of-type(odd) {
+				/*
+				grid-template-columns: 450px 1fr;
+				*/
+				-ms-grid-columns: 535px 1fr;
+				    grid-template-columns: 535px 1fr
+		}
+			}
+.cmn-area.cmn-area-type3:nth-of-type(odd) {
+			/*
+			@media screen and (max-width: 909px){
+			*/
+		}
+@media screen and (max-width: 1079px){
+.cmn-area.cmn-area-type3:nth-of-type(odd) {
+				-ms-grid-columns: 50% 1fr;
+				    grid-template-columns: 50% 1fr
+		}
+			}
+.cmn-area.cmn-area-type3:nth-of-type(odd)::after {
+				-ms-grid-column: 2;
+				    grid-column-start: 2;
+				content: 'figure target';
+				display: block;
+				height: 0;
+				padding-top: 100%;
+				position: relative;
+				z-index: -1;
+				background-color: rgba(0,0,255,0.1);
+				border: solid 1px blue;
+				color: blue;
+				margin-left: -2.5vw;
+			}
+.cmn-area.cmn-area-type3:nth-of-type(even) {
+			/*
+			@media screen and (min-width: 910px){
+			*/
+		}
+@media screen and (min-width: 1080px){
+.cmn-area.cmn-area-type3:nth-of-type(even) {
+				/*
+				grid-template-columns: 1fr 450px;
+				*/
+				-ms-grid-columns: 1fr 535px;
+				    grid-template-columns: 1fr 535px
+		}
+			}
+.cmn-area.cmn-area-type3:nth-of-type(even) {
+			/*
+			@media screen and (max-width: 909px){
+			*/
+		}
+@media screen and (max-width: 1079px){
+.cmn-area.cmn-area-type3:nth-of-type(even) {
+				-ms-grid-columns: 1fr 50%;
+				    grid-template-columns: 1fr 50%
+		}
+			}
+.cmn-area.cmn-area-type3:nth-of-type(even)::before {
+				-ms-grid-column: 1;
+				    grid-column-start: 1;
+				content: 'figure target';
+				display: block;
+				height: 0;
+				padding-top: 100%;
+				position: relative;
+				z-index: -1;
+				background-color: rgba(255,0,0,0.1);
+				border: solid 1px red;
+				color: red;
+				margin-right: -2.5vw;
+			}
+.cmn-area_inner {
+	border: solid 1px gray
+}
+.cmn-area-type3:nth-of-type(odd) .cmn-area_inner {
+		-ms-grid-column: 1;
+		    grid-column-start: 1
+}
+.cmn-area-type3:nth-of-type(even) .cmn-area_inner {
+		-ms-grid-column: 2;
+		    grid-column-start: 2
+}
+.cmn-area-type2 .cmn-area_inner {
+}
+.cmn-area-type3 .cmn-area_inner {
+}
+.cmn-area_inner {
+	/*
+	@nest .cmn-area-type1:nth-of-type(odd) & {
+		flex-direction: row;
+	}
+	@nest .cmn-area-type1:nth-of-type(even) & {
+		flex-direction: row-reverse;
+	}
+	*/
+}
+#All {
+
+}
+#HEADER {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+	min-height: 100px;
+	background-color: rgba(125, 0, 0, 0.1);
+}
+#FOOTER {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+	min-height: 100px;
+	background-color: rgba(125, 0, 0, 0.1);
+}
+#MAIN {
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	width: 100%
+}
+#MAIN #CONTENT {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		/*
+		max-width: 1600px;
+		min-height: 5329px;
+		margin-right: auto;
+		margin-left: auto;
+		*/
+		opacity: 0.5;
+	}
+#MAIN #BG {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0,0,0,0.1);
+		/*
+		background-color: gray;
+		*/
+	}
+#CANVAS {
+	display: block;
+	background-color: rgba(200,200,200,0.5);
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
