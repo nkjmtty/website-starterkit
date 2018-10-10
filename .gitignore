@@ -1,0 +1,10 @@
+# プロジェクトに含まれる一時ファイル群
+memo.md*
+
+# Node.js関連ファイル
+node_modules/
+npm-debug.log*
+
+# 空ディレクトリをGitで監視するために、
+# 下記ファイルを監視
+!.gitkeep
