@@ -2,98 +2,98 @@ http://10.0.1.80:8080/
 
 php -S 10.0.1.80:8080 router.php
 
-¡PHPƒrƒ‹ƒgƒCƒ“ƒT[ƒo
+â– PHPãƒ“ãƒ«ãƒˆã‚¤ãƒ³ã‚µãƒ¼ãƒ
 https://www.granfairs.com/blog/cto/php-builtin-server
 
-¡PHPƒrƒ‹ƒgƒCƒ“ƒT[ƒo
-http://web‰ü‘P–—á.com/php-web-server/
+â– PHPãƒ“ãƒ«ãƒˆã‚¤ãƒ³ã‚µãƒ¼ãƒ
+http://webæ”¹å–„äº‹ä¾‹.com/php-web-server/
 
-¡IPŒÅ’è
+â– IPå›ºå®š
 https://www.akakagemaru.info/port/windows10-ipaddress.html
 
-¡gulp‚Æ
+â– gulpã¨
 https://qiita.com/hsakurai2/items/948443ad0b0231d9c269
 http://bko.hateblo.jp/entry/2015/06/16/003813
 
-¡gulpfile.coffee
+â– gulpfile.coffee
 http://bashalog.c-brains.jp/16/10/12-191300.php
 
 http://www.naka-sys.okinawa/gulp-php/
 
 
 ======
-¡ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚Ì•¶šƒR[ƒh
+â– ã‚³ãƒãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã®æ–‡å­—ã‚³ãƒ¼ãƒ‰
 //UTF8
 chcp 65001
 
 //Shift-JIS
 chcp 932
 
-//Šm”F
+//ç¢ºèª
 chcp
 
-//UTF-8‚Å—§‚¿ã‚°‚é
+//UTF-8ã§ç«‹ã¡ä¸Šã’ã‚‹
 C:\Windows\System32\cmd.exe /K "chcp 65001"
 
 
 ===
-¡node‚Ìƒo[ƒWƒ‡ƒ“İ’è
+â– nodeã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³è¨­å®š
 
-//Šm”F
+//ç¢ºèª
 node -v
 
 - -
-//ƒCƒ“ƒXƒg[ƒ‹‰Â”\‚Èƒo[ƒWƒ‡ƒ“‚Ìˆê——
+//ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¯èƒ½ãªãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ä¸€è¦§
 nodist dist
 
-//w’èƒo[ƒWƒ‡ƒ“‚Ì’Ç‰Á
+//æŒ‡å®šãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®è¿½åŠ 
 nodist + 6.11.3
 
-//w’èƒo[ƒWƒ‡ƒ“‚Ö‚Ì•ÏX
+//æŒ‡å®šãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¸ã®å¤‰æ›´
 nodist 6.11.3
 
 ---
-¡npm‚ÌƒAƒbƒvƒf[ƒg
-//ƒo[ƒWƒ‡ƒ“Šm”F
+â– npmã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ
+//ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç¢ºèª
 npm --version
 
-//ƒAƒbƒvƒf[ƒg
+//ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ
 npm update -g npm
 
 ----
-¡npmƒCƒ“ƒXƒg[ƒ‹ŠÖ˜A
-//devDependencies‚©‚ç‚Ìíœ
-npm uninstall ƒpƒbƒP[ƒW --save-dev
+â– npmã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«é–¢é€£
+//devDependenciesã‹ã‚‰ã®å‰Šé™¤
+npm uninstall ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ --save-dev
 
-//Dependencies‚©‚ç‚Ìíœ
-npm uninstall ƒpƒbƒP[ƒW --save
+//Dependenciesã‹ã‚‰ã®å‰Šé™¤
+npm uninstall ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ --save
 
-//devDependencies‚É’Ç‰Á
-npm install ƒpƒbƒP[ƒW --save-dev
+//devDependenciesã«è¿½åŠ 
+npm install ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ --save-dev
 
-//pacage‚ÌƒŠƒXƒg‚©‚çdevDependencies‚É’Ç‰Á
+//pacageã®ãƒªã‚¹ãƒˆã‹ã‚‰devDependenciesã«è¿½åŠ 
 npm install --save-dev
 
-//node-sass ‚ğ—§‚Ä’¼‚·H
+//node-sass ã‚’ç«‹ã¦ç›´ã™ï¼Ÿ
 npm rebuild node-sass
 
 ---
-¡PHPƒrƒ‹ƒgƒCƒ“ƒT[ƒo
-//—§‚¿ã‚°
-php -S localhost:8000 router.php //©ƒT[ƒo‚ğ‹N“®
+â– PHPãƒ“ãƒ«ãƒˆã‚¤ãƒ³ã‚µãƒ¼ãƒ
+//ç«‹ã¡ä¸Šã’
+php -S localhost:8000 router.php //â†ã‚µãƒ¼ãƒã‚’èµ·å‹•
 
-//ƒAƒhƒŒƒX
+//ã‚¢ãƒ‰ãƒ¬ã‚¹
 http://localhost:8000
 
-//I—¹
+//çµ‚äº†
 Ctrl+C
 
 - -
-//ƒo[ƒWƒ‡ƒ“Šm”F
+//ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç¢ºèª
 php -v
 
 ----
-¡HTML‚ÅPHP
+â– HTMLã§PHP
 https://teratail.com/questions/109772
 
 
